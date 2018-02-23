@@ -1,3 +1,14 @@
-.dropdown {
-    width: 100px;
+.jumbotron {
+    background-color: #1d4077;
+    color: white
+}
+
+.panel-default > .panel-heading {
+    background-color: #15253f;
+    color: white;
+}
+
+.btn {
+    background-color: #636b77;
+    color: white;
 }
