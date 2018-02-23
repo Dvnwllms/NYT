@@ -23,7 +23,7 @@ $.ajax({
     var url=$("<p>").text(articles[i].web_url);
     console.log(articles[i].web_url);
     resultDiv.append(headline, byline, date, url);
-    $("#searchResults").append(resultDiv);
+    $("#topArticles").append(resultDiv);
     console.log("loop");
   }
 }).fail(function(err) {
