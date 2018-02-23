@@ -1,15 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NYT Search</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/logic/logic.js"></script>
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href= "style.css">
 </head>
+
 <body>
-        <div id="topArticles"></div>
-    
+
+    <div class="container">
+        <div class="jumbotron centered">
+            <h1 class="text-center">New York Times Search</h1>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search Parameters</h3>
+            </div>
+            <div class="panel-body">
+
+                <form>
+
+                    <div class="form-group">
+                        <!-- Name field -->
+                        <label class="control-label " for="name">Search Term:</label>
+                        <input class="form-control" id="name searchField" name="name" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sel1">Number of Resultts to Retrieve:</label>
+                        <select class="form-control" id="sel1">
+                          <option id="1">1</option>
+                          <option id="5">5</option>
+                          <option id="10">10</option>
+                        </select>
+                      </div>
+
+                    <div class="form-group">
+                        <!-- Subject field -->
+                        <label class="control-label" for="subject">Start Year (Optional):</label>
+                        <input class="form-control" id="subject bDate" name="subject" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <!-- Subject field -->
+                        <label class="control-label" for="subject">End Year (Optional):</label>
+                        <input class="form-control" id="subject eDate" name="subject" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary " id ="displayResults" name="Search" type="submit">Search</button>
+                        <button class="btn btn-primary " id ="clearResults" name="Clear Results" type="submit">Clear Results</button>
+                    </div>
+
+                </form>
+            </div>
+       </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Top Articles</h3>
+            </div>
+            <div class="panel-body" id="topArticles">
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+<span></span>
+
+
+
+
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="./assets/logic/logic.js"></script>
+
+
 </html>
