@@ -39,3 +39,4 @@ $("#displayResults").on("click", function(event) {
     throw err;
     });
 });
+$("#topArticles").empty();
